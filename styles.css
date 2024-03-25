@@ -167,7 +167,7 @@ input[id^="winner"] {
 }
 #final-winner {
     position: relative;
-    top: 100px;
+    top: 80px;
     margin-left: 20px;
     font-size: 35px;
     width: 200px;
@@ -176,6 +176,6 @@ input[id^="winner"] {
 }
 #final-winner-crown{
     position: relative;
-    top: 91px;
+    top: 75px;
     color: rgb(255, 225, 0);
 }
