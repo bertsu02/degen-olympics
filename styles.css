@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+h1 {
+    text-align: center;
+    color: white;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    flex: 1;
+    margin-right: 20px; /* Add some space between the title and the content */
+}
+
+.content {
+    flex: 3;
+    margin-top: 50px;
+}
+body {
+    background-image: url('https://kevinlowroller.com/wp-content/uploads/2023/07/reyna_back.jpg');
+    background-size: cover;
+    background-position: center;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+}
+#round {
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+  #cardList {
+    height: 100px;
+    width: 800px;
+    position: relative;
+    border: 2px solid black;
+    overflow: hidden;
+    white-space: nowrap;
+    
+  }
+  
+  .card {
+    display: inline-block;
+    background-color: red;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .card > img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .arrow-down {
+    margin-left: 380px;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-top: 20px solid rgb(144, 0, 255);
+  }
+  #dialog-msg > img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    color: white;
+  }
+  #dialog-msg {
+    color: white;
+    position: absolute;
+    margin: 25px;
+    text-align: center;
+    left: 65.5%;
+    font-weight: 600;
+  }
+.btn {
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    background-color: #a200ff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #600083;
+}
+
+  .btn-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+#bracket {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+
+}
+.player-area {
+    display: flex;
+    flex-direction: column;
+    width: 350px;  /* Adjust as needed */
+    border: 2px solid white; /* Add a border around each player area */
+    padding: 10px; /* Add some padding inside the border */
+    margin-bottom: 10px; /* Add some space between player areas */
+}
+
+input {
+    width: 200px;
+    height: 35px;
+    margin: 5px;
+    font-size: 16px; /* Increase the font size */
+    color: black;
+}
+
+input[type="number"] {
+    width: 75px;
+    font-size: 16px; /* Increase the font size */
+    color: black; /* Change the color to white for better visibility */
+}
+
+.round {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.player-area {
+    display: flex;
+    flex-direction: column;
+    width: 350px;  /* Adjust as needed */
+}
+
+[id^="winner"]-area {
+    width: 200px;  /* Adjust as needed */
+
+}
+input[id^="winner"] {
+    margin-top: 40px;  /* Adjust as needed */
+    margin-left: 20px;
+}
+#final-winner1-area, #final-winner2-area {
+    position: relative;
+    top: -25px;
+    margin-left: 20px;
+}
+#final-winner {
+    position: relative;
+    top: 100px;
+    margin-left: 20px;
+    font-size: 35px;
+    width: 200px;
+    height: 75px;
+
+}
+#final-winner-crown{
+    position: relative;
+    top: 91px;
+    color: rgb(255, 225, 0);
+}

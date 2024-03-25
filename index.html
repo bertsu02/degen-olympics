@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='styles.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Degen Olympics</title>
+</head>
+<body>
+    <div class="container">
+        <img src="Untitled-2.png" class="title" >
+        <div class="content">
+            <div id="round">
+                <div id="unbox-area">
+                    <div class="arrow-down"></div>
+                    <div id="cardList"></div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn" onclick="openCase();">Roll</button>
+            </div>
+            <div id="dialog">
+                <div id="dialog-msg"></div>
+            </div>
+        </div>
+    </div>
+  
+    <div id="bracket">
+        <h1>Bracket</h1>
+        <div class="round">
+            <div class="player-area">
+                <div id="player1-area">
+                    <input type="text" id="player1" placeholder="Player 1">
+                    <input type="number" id="player1-score" placeholder="Score">
+                </div>
+                <div id="player2-area">
+                    <input type="text" id="player2" placeholder="Player 2">
+                    <input type="number" id="player2-score" placeholder="Score">
+                </div>
+            </div>
+            <div id="winner1-area">
+                <input id="winner1" type="text" readonly>
+                <input id="winner1-round2-score" type="number" placeholder="Score" min="0">
+            </div>
+        </div>
+        <div class="round">
+            <div class="player-area">
+                <div id="player3-area">
+                    <input type="text" id="player3" placeholder="Player 3">
+                    <input type="number" id="player3-score" placeholder="Score">
+                </div>
+                <div id="player4-area">
+                    <input type="text" id="player4" placeholder="Player 4">
+                    <input type="number" id="player4-score" placeholder="Score">
+                </div>
+            </div>
+            <div id="winner2-area">
+                <input id="winner2" type="text" readonly>
+                <input id="winner2-round2-score" type="number" placeholder="Score" min="0">
+            </div>
+            <div id="final-winner1-area">
+                <input id="final-winner1" type="text" readonly>
+                <input id="final-winner1-final-score" type="number" placeholder="Score" min="0">
+            </div>
+            <div id="final-winner-area">
+                <input id="final-winner" type="text" readonly>
+                <i id="final-winner-crown" class="fas fa-crown"></i>
+            </div>
+        </div>
+        <div class="round">
+            <div class="player-area">
+                <div id="player5-area">
+                    <input type="text" id="player5" placeholder="Player 5">
+                    <input type="number" id="player5-score" placeholder="Score">
+                </div>
+                <div id="player6-area">
+                    <input type="text" id="player6" placeholder="Player 6">
+                    <input type="number" id="player6-score" placeholder="Score">
+                </div>
+            </div>
+            <div id="winner3-area">
+                <input id="winner3" type="text" readonly>
+                <input id="winner3-round2-score" type="number" placeholder="Score" min="0">
+            </div>
+        </div>
+        <div class="round">
+            <div class="player-area">
+                <div id="player7-area">
+                    <input type="text" id="player7" placeholder="Player 7">
+                    <input type="number" id="player7-score" placeholder="Score">
+                </div>
+                <div id="player8-area">
+                    <input type="text" id="player8" placeholder="Player 8">
+                    <input type="number" id="player8-score" placeholder="Score">
+                </div>
+            </div>
+            <div id="winner4-area">
+                <input id="winner4" type="text" readonly>
+                <input id="winner4-round2-score" type="number" placeholder="Score" min="0">
+            </div>
+            <div id="final-winner2-area">
+                <input id="final-winner2" type="text" readonly>
+                <input id="final-winner2-final-score" type="number" placeholder="Score" min="0">
+            </div>
+        </div>
+    </div>
+</body>
+<script src='script.js'></script>
+</html>
