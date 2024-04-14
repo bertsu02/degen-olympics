@@ -1,9 +1,6 @@
 var img = {
-    blue: '<img src="bonus.png"/>',
-    purple: '<img src="pic.png"/>',
-    pink: '<img src="trivia.png"/>',
-    red: '<img src="song.png"/>',
-    yellow: '<img src="emoji.png"/>'
+    blue: '<img src="normal.png"/>',
+    purple: '<img src="crazy.png"/>',
   }
   
   function reset(){
@@ -12,16 +9,10 @@ var img = {
       var rand = random(1,100);
       var element;
       
-      if (rand <= 20){
-        element = '<div class="card" style="background-color: #9966ff;" data-rarity="Bonus Buy" id=itemNumber'+i+'>'+img.blue+'</div>';
-      } else if (rand <= 40){
-        element = '<div class="card" style="background-color: #884dff;" data-rarity="Pictionary" id=itemNumber'+i+'>'+img.purple+'</div>';
-      } else if (rand <= 60){
-        element = '<div class="card" style="background-color: #7733ff;" data-rarity="Trivia" id=itemNumber'+i+'>'+img.pink+'</div>';
-      } else if (rand <= 80){
-        element = '<div class="card" style="background-color: #661aff;" data-rarity="Guess the song" id=itemNumber'+i+'>'+img.red+'</div>';
-      } else {
-        element = '<div class="card" style="background-color: #5500ff;" data-rarity="Emoji Mystery" id=itemNumber'+i+'>'+img.yellow+'</div>';
+      if (rand <= 50){
+        element = '<div class="card" style="background-color: #9966ff;" data-rarity="Normal Mode" id=itemNumber'+i+'>'+img.blue+'</div>';
+      } else if (rand <= 100){
+        element = '<div class="card" style="background-color: #884dff;" data-rarity="Crazy Mode" id=itemNumber'+i+'>'+img.purple+'</div>';
       }
   
       $('#cardList').append(element);
